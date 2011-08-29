@@ -1,5 +1,5 @@
 body {
-	background-color: #efefef; 
+	background-color: #f0f0f0; 
 	color: #5d665b;
 	margin: 0;
 	font-family: Verdana, Gevena, Arial, sans-serif;
@@ -14,11 +14,6 @@ p {
 h3 {
 	color: #966b72;
 	font-family: Georgia, "Times New Roman", Times, serif;	
-}
-
-ol {
-	list-style-type: disc;
-	margin: 1em 0 1em 40px;
 }
 
 a:link {
@@ -46,30 +41,121 @@ a:link {
 }
 
 #cabecalho {
+	background-color: #fafafa;	
 	text-align: center;
-	height: 25px;
-	margin: 15px;
+	height: 50px;
+	margin: 0px;
+	padding-top: 20px;
 }
 
 #logotipo {
-	margin: 50px;
+	color: #4f4f4f;
 	font-family: Verdana, Gevena, Arial, sans-serif;
 	font-size: large;
+	font-weight: bold;	
+	margin: 50px;
 }
 
 #publicidade {
-	background-color: #e5e5e5; 
-	border-top-color: black;
-	border-width: 5px;
+	background-color: #f0f0f0; 
+	border: solid #999;
+	border-top-color: #f2f2f2;
+	border-bottom-color: #e8e8e8;
+	border-width: 1px 0 1px 0;		
 	height: 400px;
 }
 
 #corpo {
-	background-color:#eaeaea;
-	margin-left: 250px;
-	margin-left: 200px;
+	background-color: #fafafa;
+	border-top-color: #f0f0f0;
+	border-bottom-color: #e0e0e0;	
+	border-width: 1px 0 1px 0;
+	padding-top: 20px;
+	padding-left: 250 px;
+	padding-righ: 200 px;
+	padding-bottom: 20px;
+	position: center;
+	text-align: center;
+	display: center;
 }
 
 #rodape {
-	height: 200px
+ 	bottom: 0;
+	border: solid #999;
+	border-top-color: #e6e6e6;
+	border-width: 1px 0 0 0;	
+ 	min-height: 100px; 
+ 	position: relative;
+	text-align: center; 	
+ 	width: 100%;
+}
+
+.container {
+	font-size: x-small;
+	left: 50%;
+	margin-left: -350px;
+	position: relative;
+	width: 700px;
+}
+
+.titulo_conteudo {
+	color: #4f4f4f;	
+	float: center;
+	font-size: small;	
+	font-weight: bold;
+	text-align: left;	
+	margin-left: 25px;
+}
+
+.conteudo {
+	text-align: left;	
+	float: left;
+	width: 300px;
+	margin: 0px 20px 0px 20px;
+}
+
+.clear {
+	clear: both;
+}
+
+img {
+	border: none;
+}
+
+.gallery {
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.gallery li {
+	margin: 10px;
+	padding: 0;
+	float: left;
+	position: relative;
+	width: 180px;
+	height: 130px;
+}
+
+.gallery img {
+	background: #fff;
+	border: solid 1px #ccc;
+	width: 350px;
+	height: 350px;
+	padding: 4px;
+}
+
+.gallery span {
+	width: 28px;
+	height: 21px;
+	display: block;
+	position: absolute;
+	top: -12px;
+	left: 180px;
+	background: url(../images/pin.png) no-repeat;
+}
+
+.gallery a {
+	text-decoration: none;
 }
