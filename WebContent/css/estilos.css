@@ -61,7 +61,11 @@ a:link {
 	border: solid #999;
 	border-top-color: #f2f2f2;
 	border-bottom-color: #e8e8e8;
-	border-width: 1px 0 1px 0;		
+	border-width: 1px 0 1px 0;	
+	padding-top: 20px;
+	padding-left: 250 px;
+	padding-righ: 200 px;
+	padding-bottom: 20px;
 	height: 400px;
 }
 
@@ -118,44 +122,105 @@ a:link {
 	clear: both;
 }
 
-img {
-	border: none;
+#container {
+	width:580px;
+	padding:10px;
+	margin:0 auto;
+	position:relative;
+	z-index:0;
 }
 
-.gallery {
-	float: left;
-	list-style: none;
-	margin: 0;
-	padding: 0;
+#example {
+	width:600px;
+	height:350px;
+	position:relative;
 }
 
-.gallery li {
-	margin: 10px;
-	padding: 0;
-	float: left;
-	position: relative;
-	width: 180px;
-	height: 130px;
+/*
+	Slideshow
+*/
+
+#slides {
+	position:absolute;
+	top:15px;
+	left:4px;
+	z-index:100;
 }
 
-.gallery img {
-	background: #fff;
-	border: solid 1px #ccc;
-	width: 350px;
-	height: 350px;
-	padding: 4px;
+/*
+	Slides container
+	Important:
+	Set the width of your slides container
+	Set to display none, prevents content flash
+*/
+
+.slides_container {
+	width:570px;
+	overflow:hidden;
+	position:relative;
+	display:none;
 }
 
-.gallery span {
-	width: 28px;
-	height: 21px;
-	display: block;
-	position: absolute;
-	top: -12px;
-	left: 180px;
-	background: url(../images/pin.png) no-repeat;
+/*
+	Each slide
+	Important:
+	Set the width of your slides
+	If height not specified height will be set by the slide content
+	Set to display block
+*/
+
+.slides_container a {
+	width:570px;
+	height:270px;
+	display:block;
 }
 
-.gallery a {
-	text-decoration: none;
+.slides_container a img {
+	display:block;
+}
+
+/*
+	Next/prev buttons
+*/
+
+#slides .next,#slides .prev {
+	position:absolute;
+	top:107px;
+	left:-39px;
+	width:24px;
+	height:43px;
+	display:block;
+	z-index:101;
+}
+
+#slides .next {
+	left:585px;
+}
+
+/**********************	Paginação  **********************/
+
+.pagination {
+	margin:26px auto 0;
+	width:100px;
+}
+
+.pagination li {
+	float:left;
+	margin:0 1px;
+	list-style:none;
+}
+
+.pagination li a {
+	display:block;
+	width:12px;
+	height:0;
+	padding-top:12px;
+	background-image:url(../images/pagination.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+
+.pagination li.current a {
+	background-position:0 -12px;
 }
