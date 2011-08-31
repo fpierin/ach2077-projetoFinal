@@ -39,13 +39,7 @@
 		<div id="corpo">
 			<div class="container">		
 				<div class="conteudo">
-<%-- 					<%@ include file="/WEB-INF/jspf/lojas.jspf"%> --%>
-					<span class="titulo_conteudo">Lojas por ordem x</span>
-					<ul>
-						<c:forEach items="${lojasEmOrdemAlfabetica}" var="loja">
-							<li>loja.nome</li>
-						</c:forEach>
-					</ul>
+					<jsp:include page="lojasEmOrdemAlfabetica.jsp" />  
 				</div>
 				<div class="conteudo">
 					<%@ include file="/WEB-INF/jspf/lojas.jspf"%>			
