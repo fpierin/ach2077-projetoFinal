@@ -1,10 +1,9 @@
 package br.usp.each.ach2077.representacoes;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.TableGenerator;
-
-import org.hibernate.annotations.Entity;
 
 @Entity
 public class Loja {
@@ -18,13 +17,13 @@ public class Loja {
 	@Column
 	private String nome;
 
+	public Loja() {}
+
 	public Loja(final int id, final String nome) {
 		super();
 		this.id = id;
 		this.nome = nome;
 	}
-
-	public Loja() {	}
 
 	public int getId() {
 		return id;
@@ -41,6 +40,10 @@ public class Loja {
 	public void setNome(final String nome) {
 		this.nome = nome;
 	}
-	
+
+	@Override
+	public String toString() {
+		return "Loja [id=" + id + ", nome=" + nome + "]";
+	}
 	
 }

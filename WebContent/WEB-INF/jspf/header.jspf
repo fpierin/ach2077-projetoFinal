@@ -4,4 +4,12 @@
 	<head>
 		<title>CCSP - Centro comercial de São Paulo</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" lang="pt-br">
-		<link rel="stylesheet" href="css/estilos.css" type="text/css" media="all">	
+		<link rel="stylesheet" href="<c:url value="/css/estilos.css"/>" type="text/css" media="all">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script> 
+		<script type="text/javascript" src="<c:url value="/js/slides.min.jquery.js"/>"></script>
+		<fmt:setLocale value="pt_br"/>
+	</head>
+<body>
+<div id="cabecalho">
+	<span id="logotipo">Centro comercial de S&#227;o Paulo</span>
+</div>

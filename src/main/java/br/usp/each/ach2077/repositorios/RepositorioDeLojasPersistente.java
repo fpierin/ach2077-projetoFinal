@@ -29,5 +29,5 @@ public class RepositorioDeLojasPersistente implements RepositorioDeLojas {
 		return (List<Loja>) session.createQuery("from Loja order by nome")
 								   .list();
 	}
-
+	
 }

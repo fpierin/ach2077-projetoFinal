@@ -1,7 +1,0 @@
-<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<span class="titulo_conteudo">Lojas por ordem alfab&eacute;tica</span>
-<ul>
-	<c:forEach items="${lojasEmOrdemAlfabetica}" var="loja">
-		<li>loja.nome</li>
-	</c:forEach>
-</ul>
