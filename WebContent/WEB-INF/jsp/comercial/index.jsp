@@ -1,9 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-		<title>CCSP - Centro comercial de São Paulo</title>
-		<link rel="stylesheet" href="css/estilos.css" type="text/css" media="all">		
+<%@ include file="/WEB-INF/jspf/header.jspf"%>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script> 
 		<script src="js/slides.min.jquery.js"></script> 
 		<script> 
@@ -20,7 +15,7 @@
 	</head>
 	<body>
 		<div id="cabecalho">
-			<span id="logotipo">Lorem ipsum dolor sit amet</span>
+			<span id="logotipo">Centro comercial de S&#227;o Paulo</span>
 		</div>
 		<div id="publicidade">
 			<div id="container"> 
@@ -44,30 +39,17 @@
 		<div id="corpo">
 			<div class="container">		
 				<div class="conteudo">
-					<span class="titulo_conteudo">Lorem ipsum dolor</span>				
+<%-- 					<%@ include file="/WEB-INF/jspf/lojas.jspf"%> --%>
+					<span class="titulo_conteudo">Lojas por ordem x</span>
 					<ul>
-						<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-						<li>Donec et libero a urna placerat sollicitudin.</li>
-						<li>Quisque adipiscing lacus vel massa rhoncus volutpat.</li>
-						<li>Proin ut neque magna, sed posuere arcu.</li>
-						<li>Donec non felis a dui placerat consequat.</li>
-						<li>Curabitur id diam justo, id dapibus dui.</li>
-						<li>Ut eget dolor quis nunc blandit cursus ac eu sapien.</li>
+						<c:forEach items="${lojasEmOrdemAlfabetica}" var="loja">
+							<li>loja.nome</li>
+						</c:forEach>
 					</ul>
 				</div>
 				<div class="conteudo">
-					<span class="titulo_conteudo">Lorem ipsum dolor</span>
-					<ul>
-						<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-						<li>Donec et libero a urna placerat sollicitudin.</li>
-						<li>Quisque adipiscing lacus vel massa rhoncus volutpat.</li>
-						<li>Proin ut neque magna, sed posuere arcu.</li>
-						<li>Donec non felis a dui placerat consequat.</li>
-						<li>Curabitur id diam justo, id dapibus dui.</li>
-						<li>Ut eget dolor quis nunc blandit cursus ac eu sapien.</li>
-					</ul>			
+					<%@ include file="/WEB-INF/jspf/lojas.jspf"%>			
 				</div>
-				
 				<div class="clear"></div>			
 			</div>			
 		</div>	

@@ -62,11 +62,11 @@ a:link {
 	border-top-color: #f2f2f2;
 	border-bottom-color: #e8e8e8;
 	border-width: 1px 0 1px 0;	
-	padding-top: 20px;
+	padding-top: 0px;
 	padding-left: 250 px;
 	padding-righ: 200 px;
-	padding-bottom: 20px;
-	height: 400px;
+	padding-bottom: 0px;
+	height: 350px;
 }
 
 #corpo {
@@ -142,7 +142,7 @@ a:link {
 
 #slides {
 	position:absolute;
-	top:15px;
+	top:12px;
 	left:4px;
 	z-index:100;
 }
@@ -185,7 +185,7 @@ a:link {
 
 #slides .next,#slides .prev {
 	position:absolute;
-	top:107px;
+	top:100px;
 	left:-39px;
 	width:24px;
 	height:43px;
@@ -197,7 +197,7 @@ a:link {
 	left:585px;
 }
 
-/**********************	Paginação  **********************/
+/**********************	Paginacao  **********************/
 
 .pagination {
 	margin:26px auto 0;
@@ -213,8 +213,8 @@ a:link {
 .pagination li a {
 	display:block;
 	width:12px;
-	height:0;
-	padding-top:12px;
+	height:2px;
+	padding-top:10px;
 	background-image:url(../images/pagination.png);
 	background-position:0 0;
 	float:left;
