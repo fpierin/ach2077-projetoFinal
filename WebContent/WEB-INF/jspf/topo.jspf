@@ -2,7 +2,7 @@
 <%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <html>
 	<head>
-		<title>CCSP - Centro comercial de São Paulo</title>
+		<title>Lorem ipsum dolor sit amet</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" lang="pt-br">
 		<link rel="stylesheet" href="<c:url value="/css/estilos.css"/>" type="text/css" media="all">
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script> 
@@ -11,8 +11,11 @@
 	</head>
 <body>
 <div id="cabecalho">
-	<span id="logotipo">Centro comercial de S&#227;o Paulo</span>
+	<span id="logotipo">Lorem ipsum dolor sit amet</span>
 </div>
 <div id="busca">
-	Teste
+	<form id="buscarapida" action=""> 
+		<input type="text" value="Digite seu interesse" />
+		<input type="button" value="Buscar" />	
+	</form>	
 </div>

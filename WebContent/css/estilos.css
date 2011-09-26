@@ -1,60 +1,41 @@
 body {
-	background-color: #f0f0f0; 
+	background-color: #fafafa; 
 	color: #5d665b;
-	margin: 0;
+	margin: 0 px;
+	padding: 0px;
 	font-family: Verdana, Gevena, Arial, sans-serif;
-	font-size: small;
+	font-size: 12px;
 	line-height: 180%;
-}
-
-p {
-	text-indent: 3em;
-}
-
-h3 {
-	color: #966b72;
-	font-family: Georgia, "Times New Roman", Times, serif;	
-}
-
-a:link {
-	color: #696; 
-	text-decoration: none; 
-	background-color: transparent;
-}
-
-a:visited {
-	color: #699; 
-	text-decoration: none; 
-	background-color: transparent;
-}
-
-a:hover {
-	color: #c93; 
-	text-decoration: underline; 
-	background-color: transparent;
-}
-
-a:link {
-	color: #900; 
-	text-decoration: underline; 
-	background-color: transparent;
 }
 
 #cabecalho {
 	background-color: #fafafa;	
+	height: 40px;
 	text-align: center;
 }
 
 #logotipo {
-	color: #8f8f8f;
-	background-color: pink;
-	font-family: Verdana, Gevena, Arial, sans-serif;
-	font-size: large;
+	color: #333366;
+	display: block;	
+	font-size: 25px;
 	font-weight: bold;	
-	left:50%;
-	margin-left: -200px;
-	width: 400px;
+	left: 50%;
+	margin-top: 5px;	
+}
+
+#busca {
+	background-color: #333333;
+	display: block;
+	height: 25px;
+	margin: 0 auto;
+	background-color: #333366;
 	text-align: center;
+}
+
+#buscarapida {
+	margin: 0px;	
+	max-height: 25px;
+	padding: 0px;
 }
 
 #publicidade {
@@ -62,12 +43,8 @@ a:link {
 	border: solid #999;
 	border-top-color: #f2f2f2;
 	border-bottom-color: #e8e8e8;
-	border-width: 1px 0 1px 0;	
-}
-
-.center {
-	margin: auto auto;	
-	position: relative;	
+	border-width: 1px 0 1px 0;
+	height: 400px;	
 }
 
 #corpo {
@@ -75,10 +52,13 @@ a:link {
 	border-top-color: #f0f0f0;
 	border-bottom-color: #e0e0e0;	
 	border-width: 1px 0 1px 0;
-	padding: 20px;
-	position: center;
 	text-align: center;
-	display: center;
+}
+
+.centralizador {
+	margin-left: auto;
+    margin-right: auto;	
+	width: 600px;	
 }
 
 #rodape {
@@ -86,18 +66,16 @@ a:link {
 	border: solid #999;
 	border-top-color: #e6e6e6;
 	border-width: 1px 0 0 0;	
- 	min-height: 50px; 
+ 	height: 20px; 
  	position: relative;
 	text-align: center; 	
- 	width: 100%;
 }
 
-.container {
-	font-size: x-small;
-	left: 50%;
-	margin-left: -350px;
-	position: relative;
-	width: 700px;
+.conteudo {
+	text-align: left;	
+	float: left;
+	width: 250px;
+	margin: 0px 20px 0px 20px;
 }
 
 .titulo_conteudo {
@@ -109,130 +87,6 @@ a:link {
 	margin-left: 25px;
 }
 
-.conteudo {
-	text-align: left;	
-	float: left;
-	width: 300px;
-	margin: 0px 20px 0px 20px;
-}
-
 .clear {
 	clear: both;
-}
-
-#container {
-	width:580px;
-	margin:0 auto;
-	padding:10px;
-	position:relative;
-	z-index:0;
-}
-
-#example {
-	width:650px;
-	height:350px;	
-	margin:0 auto;	
-	position:relative;
-/* 	left: 50%;	 */
-}
-
-/*
-	Slideshow
-*/
-
-#slides {
-	position:absolute;
-	top:12px;
-	left:4px;
-	z-index:100;
-}
-
-/*
-	Slides container
-	Important:
-	Set the width of your slides container
-	Set to display none, prevents content flash
-*/
-
-.slides_container {
-	width:570px;
-	overflow:hidden;
-	position:relative;
-	display:none;
-}
-
-/*
-	Each slide
-	Important:
-	Set the width of your slides
-	If height not specified height will be set by the slide content
-	Set to display block
-*/
-
-.slides_container a {
-	width:570px;
-	height:270px;
-	display:block;
-}
-
-.slides_container a img {
-	display:block;
-}
-
-/*
-	Next/prev buttons
-*/
-
-#slides .next,#slides .prev {
-	position:absolute;
-	top:100px;
-	left:-39px;
-	width:24px;
-	height:43px;
-	display:block;
-	z-index:101;
-}
-
-#slides .next {
-	left:585px;
-}
-
-/**********************	Paginacao  **********************/
-
-.pagination {
-	margin:26px auto 0;
-	width:100px;
-}
-
-.pagination li {
-	float:left;
-	margin:0 1px;
-	list-style:none;
-}
-
-.pagination li a {
-	display:block;
-	width:12px;
-	height:2px;
-	padding-top:10px;
-	background-image:url(../images/pagination.png);
-	background-position:0 0;
-	float:left;
-	overflow:hidden;
-}
-
-.pagination li.current a {
-	background-position:0 -12px;
-}
-
-#cabecalho {
-	background-color: #1a1a3a;	
-	text-align: center;
-	height: 50px;
-	margin: 0px;
-	padding-top: 20px;
-}
-
-#busca {
-	background-color: #5a5a5a;
 }
