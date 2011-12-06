@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
-  <display-name>ach2077-projetoFinal</display-name>
+  <display-name>centrocomercial</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
   <context-param>
-    <param-name>br.com.caelum.vraptor.packages</param-name>
-    <param-value>br.com.caelum.vraptor.restfulie</param-value>
+    <param-name>br.com.caelum.vraptor.encoding</param-name>
+    <param-value>ISO-8859-1</param-value>
   </context-param>
-  <context-param>  
-	<param-name>br.com.caelum.vraptor.encoding</param-name>  
-	<param-value>UTF-8</param-value>  
-  </context-param>  
+  <context-param>
+    <param-name>br.com.caelum.vraptor.provider</param-name>
+    <param-value>br.usp.each.centrocomercial.sistema.Provedor</param-value>
+  </context-param>
   <filter>
     <filter-name>vraptor</filter-name>
     <filter-class>br.com.caelum.vraptor.VRaptor</filter-class>
@@ -18,21 +26,14 @@
     <url-pattern>/*</url-pattern>
     <dispatcher>FORWARD</dispatcher>
     <dispatcher>REQUEST</dispatcher>
-  </filter-mapping>  
-  <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
-  </welcome-file-list>
-  <jsp-config>
-    <jsp-property-group>
-      <description>ach2077-projetoFinal</description>
-      <display-name>ach2077-projetoFinal</display-name>
-      <url-pattern>*.jsp</url-pattern>
-    </jsp-property-group>
-  </jsp-config>  
+  </filter-mapping>
+	<jsp-config>
+		<jsp-property-group>
+			<description>lojavirtual</description>
+			<display-name>Loja Virtual</display-name>
+			<url-pattern>*.jsp</url-pattern>
+			<include-prelude>/WEB-INF/jspf/header.jspf</include-prelude>
+			<include-coda>/WEB-INF/jspf/footer.jspf</include-coda>
+		</jsp-property-group>
+	</jsp-config>  
 </web-app>
-

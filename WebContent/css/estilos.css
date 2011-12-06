@@ -1,92 +1,208 @@
 body {
-	background-color: #fafafa; 
-	color: #5d665b;
-	margin: 0 px;
+	background-color: #ffffff; 
+	color: #4A4438;
+	margin: 0px;
 	padding: 0px;
-	font-family: Verdana, Gevena, Arial, sans-serif;
+	font-family: Book Antiqua, Verdana, Gevena, Arial, sans-serif;
 	font-size: 12px;
 	line-height: 180%;
 }
 
-#cabecalho {
-	background-color: #fafafa;	
-	height: 40px;
-	text-align: center;
+body a:LINK {
+	color: #615D42;
+	text-decoration: none;
+}
+
+body a:HOVER {
+	color: #403A17;
+	text-decoration: underline;
+}
+
+#header {
+	background-color: #AAA18B;
+	border-bottom: 1px solid #dFdCdC;	
+	min-height: 50px;
+	padding: 10px;
+	text-align: left;
+}
+
+#logo {
+	display: block;
+	float: left;
 }
 
 #logotipo {
-	color: #333366;
-	display: block;	
-	font-size: 25px;
-	font-weight: bold;	
-	left: 50%;
-	margin-top: 5px;	
-}
-
-#busca {
-	background-color: #333333;
-	display: block;
-	height: 25px;
-	margin: 0 auto;
-	background-color: #333366;
-	text-align: center;
-}
-
-#buscarapida {
-	margin: 0px;	
-	max-height: 25px;
-	padding: 0px;
-}
-
-#publicidade {
-	background-color: #f0f0f0; 
-	border: solid #999;
-	border-top-color: #f2f2f2;
-	border-bottom-color: #e8e8e8;
-	border-width: 1px 0 1px 0;
-	height: 400px;	
-}
-
-#corpo {
-	background-color: #fafafa;
-	border-top-color: #f0f0f0;
-	border-bottom-color: #e0e0e0;	
-	border-width: 1px 0 1px 0;
-	text-align: center;
-}
-
-.centralizador {
-	margin-left: auto;
-    margin-right: auto;	
-	width: 600px;	
-}
-
-#rodape {
- 	bottom: 0;
-	border: solid #999;
-	border-top-color: #e6e6e6;
-	border-width: 1px 0 0 0;	
- 	height: 20px; 
- 	position: relative;
-	text-align: center; 	
-}
-
-.conteudo {
-	text-align: left;	
-	float: left;
-	width: 250px;
-	margin: 0px 20px 0px 20px;
-}
-
-.titulo_conteudo {
-	color: #4f4f4f;	
-	float: center;
-	font-size: small;	
+	color: #4A4438;
+	font-size: 35px;
 	font-weight: bold;
-	text-align: left;	
-	margin-left: 25px;
+	margin-left: 5px;	
+	padding: 2px;
+	text-shadow: 2px white;
 }
 
-.clear {
+#buscador {
+	display: inline;
+	float: right;
+	width: 200px;
+	text-align: center;
+}
+
+#buscador input {
+	background-color: #AAA18B;
+	border: 1px solid #4A4438;
+	color: #615842;
+}
+
+#navegacao {
 	clear: both;
+	text-align: left;
+	text-shadow: 2px white;	
+}
+
+#navegacao li {
+	display: inline;
+	float: left;
+	font-size: 14px;	
+	padding-right: 10px;
+	width: auto;
+}
+
+#navegacao a:LINK {
+	color: #4A4438;
+	text-decoration: none;
+}
+
+#navegacao a:HOVER {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#body {
+	border-top: 1px solid #4A4438; 
+	padding: 5px;
+}
+
+#centralizador {
+	margin: auto;
+	min-height: 300px;
+	max-width: 800px;
+	padding: 5px;
+	text-align: center;
+}
+
+#centralizador hr {
+	border: 1px dotted #4A4438; 
+}
+
+#conteudo {
+	text-align: center;
+}
+
+#conteudo li {
+	list-style: square;
+	margin-left: 0px;
+}
+
+#mostra_loja {
+	padding: 25px;
+	display: block;
+	float: left;
+}
+
+#mostra_loja img {
+	height: 150px;
+	width: 150px;
+	-moz-border-radius: 5px;
+}
+
+#detalhes {
+	display: inline;
+	float: left;
+	padding: 25px;
+	text-align: left;	
+}
+
+#conteudo span {
+	font-weight: bold;
+	text-shadow: 1px gray; 
+}
+
+#esquerda {
+	text-align: left;
+	display: block;
+	float: left;
+	margin-left: 150px;
+}
+
+#direita {
+	text-align: left;
+	display: inline;
+	float: right;
+	margin-right: 150px;	
+}
+
+#localizador {
+	
+}
+
+#localizador img {
+	border-style: 1px dashed #403417;
+	height: 200px;
+	padding: 25px;
+	width: 400px;
+}
+
+#mapa {
+	border: 2px solid #403417;
+	width: 400px;
+	height: 400px;
+	margin: auto;
+}
+
+#footer {
+	background-color: #403417;
+	color: #AAA18B;
+	text-align: center;
+}
+
+#divisor {
+	clear:both;
+}
+
+ul.lojas {
+	clear: both;
+	width: 100%;
+	padding: 0;
+	margin: 10px;
+	list-style: none;
+	text-align: center;
+}
+
+ul.lojas li {
+	float: left;
+	width: 100px; /*Set default width*/
+	padding: 5px;
+	margin: 5px;
+	display: inline;
+}
+
+.loja {
+	height: 100px;
+	font-size: 1em;
+	margin-right: 10px; /*Creates the 10px gap between each column*/
+	padding: 10px;
+}
+
+.loja h2 {
+	font-size: 1.8em;
+}
+
+.loja img { /*Flexible image size with border*/
+	height: 150px;
+	width: 150px; /*Took 1% off of the width to prevent IE6 bug*/
+	padding: 5%;
+	margin: 0 auto;
+	display: block;
+	-ms-interpolation-mode: bicubic;
+	/*prevents image pixelation for IE 6/7 */
 }

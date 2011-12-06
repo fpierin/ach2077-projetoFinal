@@ -16,8 +16,9 @@
 		<property name="hbm2ddl.auto">update</property>		
 		<property name="show_sql">true</property>
 		
-  		<!-- Mapeamento -->  
-        <mapping class="br.usp.each.ach2077.representacoes.Loja"/>
+  		<!-- Mapeamento -->
+  		<mapping class="br.usp.each.centrocomercial.representacoes.Categoria"/>  
+        <mapping class="br.usp.each.centrocomercial.representacoes.Loja"/>
          
 	</session-factory>
 </hibernate-configuration>	
